@@ -1,0 +1,45 @@
+.card-doctor {
+    width:  370px;
+    height: 469px;
+    border: 10px black;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+    align-items: center;
+    padding: 40px 0px;
+
+    &__txt {
+        display: flex;
+        flex-direction: column;
+        row-gap: 9px;
+    }
+    
+
+    &__img {
+        width: 284px;
+        height: 297px;
+    }
+
+    &__name {
+        font-family: 'Open Sans';
+        width: 284px;
+        font-weight: 700;
+        font-size: 22px;
+        color: $black2;
+    }
+
+    &__subtitle {
+        font-family: 'Open Sans';
+        width: 284px;
+        font-weight: 400;
+        font-size: 16px;
+        color: $black;
+    }
+}
+
+
+.card-doctor:hover {
+    border: 1px solid $blue;
+}

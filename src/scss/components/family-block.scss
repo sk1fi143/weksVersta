@@ -1,0 +1,235 @@
+.family-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    &__content {
+        margin-top: 66px;
+        display: flex;
+        flex-direction: row;
+        margin: 0px auto
+    }
+
+    &__info {
+        margin-top: 130px;
+        width: 552px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 54px;
+    }
+
+    &__txt {
+        display: flex;
+        flex-direction: column;
+        row-gap: 22px;
+    }
+
+    &__title {
+        font-family: 'Open Sans';
+        font-weight: 700;
+        font-size: 64px;
+        color: $black2;
+    }
+
+    &__subtitle {
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 16px;
+        color: $grey;
+        line-height: 168%;
+    }
+
+    &__buttons {
+        width: 388px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__but1 {
+        width: 181px;
+        height: 60px;
+        border-radius: 10px;
+        padding: auto;
+        background-color: $fiol;
+        font-family: 'Open Sans';
+        font-weight: 700;
+        font-size: 16px;
+        color: $white;
+        line-height: 168%;
+        cursor: pointer;
+        border: none;
+    }
+
+        
+    &__but1:hover {
+        background: $white;
+        border: 1px solid $fiol;
+        color: $fiol;
+        transition: 0.3s ease;
+    }
+
+    &__but2 {
+        width: 181px;
+        height: 60px;
+        border-radius: 10px;
+        padding: auto;
+        border: 1px solid $fiol;
+        background-color: $white;
+        font-family: 'Open Sans';
+        font-weight: 700;
+        font-size: 16px;
+        color: $fiol;
+        line-height: 168%;
+        cursor: pointer;
+    }
+
+        
+    &__but2:hover {
+        background: $fiol;
+        color: $white;
+        transition: 0.3s ease;
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+    .family-block {
+        align-items: center;
+        width: 980px;
+        margin: auto;
+
+        &__info {
+            margin-top: 130px;
+            width: 352px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 54px;
+        }
+    
+        &__txt {
+            display: flex;
+            flex-direction: column;
+            row-gap: 22px;
+        }
+    
+        &__title {
+            font-family: 'Open Sans';
+            font-weight: 700;
+            font-size: 44px;
+            color: $black2;
+        }
+    
+        &__subtitle {
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 16px;
+            color: $grey;
+            line-height: 168%;
+        }
+    
+        &__buttons {
+            width: 348px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+        &__but1 {
+            width: 161px;
+            height: 60px;
+            border-radius: 10px;
+            padding: auto;
+            border: none;
+            background-color: $fiol;
+            font-family: 'Open Sans';
+            font-weight: 700;
+            font-size: 16px;
+            color: $white;
+            line-height: 168%;
+            cursor: pointer;
+        }
+
+        &__img {
+            scale: 0.7;
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 600px) {
+        .family-block{
+            width: 100%;
+            padding: 30px;
+
+            &__img {
+                display: none;
+            }
+
+            &__title {
+                font-family: 'Open Sans';
+                font-weight: 700;
+                font-size: 44px;
+                color: $black2;
+            }
+        
+            &__subtitle {
+                font-family: 'Open Sans';
+                font-weight: 400;
+                font-size: 16px;
+                color: $grey;
+                line-height: 168%;
+            }
+        
+            &__buttons {
+                width: 348px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+}
+
+@media screen and (max-width: 600px) and (min-width: 340px) {
+    .family-block{
+        width: 100%;
+        padding: 15px;
+
+        &__img {
+            display: none;
+        }
+
+        &__info {
+            width: 100%;
+        }
+
+        &__title {
+            font-family: 'Open Sans';
+            font-weight: 700;
+            font-size: 30px;
+            color: $black2;
+        }
+    
+        &__subtitle {
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 12px;
+            color: $grey;
+            line-height: 168%;
+        }
+    
+        &__buttons {
+            width: 300px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__but1, &__but2 {
+            width: 130px;
+        }
+
+        &__img {
+            display: none;
+        }
+    }
+}

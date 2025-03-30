@@ -1,0 +1,59 @@
+.help-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 65px;
+    width: 100%;
+
+    &__txt {
+        display: flex;
+        flex-direction: column;
+        row-gap: 9px;
+    }
+
+    &__title {
+        font-family: 'Open Sans';
+        font-weight: 700;
+        font-size: 52px;
+        color: $black;
+        text-align: center;
+    }
+
+    &__subtitle {
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 16px;
+        color: $grey;
+        text-align: center;
+        max-width: 679px;
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: row;
+        column-gap: 30px;
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+    .help-block {
+        &__cards {
+            column-gap: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 500px) {
+    .help-block__cards {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}
+
+
+@media screen and (max-width: 500px) and (min-width: 320px) {
+    .help-block__cards {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}

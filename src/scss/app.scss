@@ -1,0 +1,35 @@
+@import './variables';
+@import './libs/normalize';
+@import './libs/fonts';
+@import './components/header/header';
+@import './components/footer';
+@import './components/location';
+@import './components/card-doctor';
+@import './components/family-block';
+@import './components/help-block';
+@import './components/help-card';
+@import './components/our-doctor';
+
+#root {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 35px;
+    padding: 30px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-top: 66px;
+    margin-bottom: 66px;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 320px) {
+    #root {
+        padding-top: 10px;
+    }
+}

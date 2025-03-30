@@ -1,0 +1,111 @@
+.header-top{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__row-social {
+        display: flex;
+        flex-direction: row;
+        column-gap: 11px;
+        align-items: center;
+
+        &-item {
+            width: 26px;
+            height: 26px;
+            border: 1px solid $blue;
+            display: flex;
+            align-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            &-icon {
+                width: 20px;
+                height: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                fill: $blue;
+            }
+        }
+
+        &-item:hover {
+            background-color: $blue;
+            transition: 0.3s ease;
+            border: 1px solid $blue;
+        }
+
+        &-item:hover &-item-icon {
+            fill: $white;
+            transition: 0.2s ease;
+        }
+    }
+
+    &__row-links {
+        display: flex;
+        flex-direction: row;
+        column-gap: 44px;
+
+        &-item {
+            color: $black;
+            font-size: 13px;
+            font-family: 'Open Sans';
+            cursor: pointer;
+            width: 600;
+            letter-spacing: 0%;
+        }
+
+        &-item:hover {
+            text-decoration: underline;
+            transition: 0.3s ease;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+    .header-top{
+    
+        &__row-social {
+    
+            &-item {
+                width: 22px;
+                height: 22px;
+    
+                &-icon {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+    
+        &__row-links {
+            display: flex;
+            flex-direction: row;
+            column-gap: 36px;
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 320px) {
+    .header-top{
+        display: none;
+    
+        &__row-social {
+            column-gap: 7px;
+    
+            &-item {
+                width: 18px;
+                height: 18px;
+    
+                &-icon {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+    
+        &__row-links {
+            display: none;
+        }
+    }
+}

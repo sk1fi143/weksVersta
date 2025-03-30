@@ -1,0 +1,127 @@
+.our-doctor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 80px;
+    width: 100%;
+
+    &__txt {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__exp {
+        display: flex;
+        flex-direction: row;
+        column-gap: 22px;
+        align-items: center;
+    }
+
+    &__line {
+        width: 157px;
+        height: 1.5px;  
+        background-color: $blue;
+    }
+
+    &__title {
+        font-family: 'Open Sans';
+        font-weight: 700;
+        font-size: 16px;
+        color: $blue;
+    }
+
+    &__main-title {
+        font-family: 'Open Sans';
+        font-weight: 700;
+        font-size: 52px;
+        color: $black;
+    }
+
+    &__main-subtitle {
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 16px;
+        color: $grey;
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: row;
+        column-gap: 30px;
+    }
+
+    &__button {
+        width: 199px;
+        height: 60px;
+        border-radius: 15px;
+        background-color: $fiol;
+        padding: auto;
+        border: none;
+        font-family: 'Open Sans';
+        font-weight: 700;
+        font-size: 16px;
+        color: $white;
+        cursor: pointer;
+    }
+
+    &__button:hover {
+        background: $white;
+        border: 1px solid $blue;
+        color: $fiol;
+        transition: 0.3s ease;
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+    .our-doctor {
+        row-gap: 40px;
+    }
+    .our-doctor__cards {
+        scale: 0.8;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 500px) {
+    .our-doctor {
+        width: 100%;
+        padding: 30px;
+        row-gap: 20px;
+    }
+
+    .our-doctor__cards {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+}
+
+
+@media screen and (max-width: 500px) and (min-width: 320px) {
+    .our-doctor {
+        width: 100%;
+        padding: 30px;
+        row-gap: 20px;
+
+        &__main-title {
+            font-family: 'Open Sans';
+            font-weight: 700;
+            font-size: 32px;
+            color: $black;
+        }
+    
+        &__main-subtitle {
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 12px;
+            color: $grey;
+        }
+    }
+
+    .our-doctor__cards {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+}

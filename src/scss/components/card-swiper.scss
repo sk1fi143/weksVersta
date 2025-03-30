@@ -1,0 +1,53 @@
+.card-swiper {
+    width: 580px;
+    height: 312px;
+    background-color: $white;
+    padding: 53.5px 39.5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    border-radius: 15px;
+
+    &__txt {
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 16px;
+        color: $black;
+        line-height: 168%;   
+    }
+
+    &__info {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__name {
+        display: flex;
+        flex-direction: column;
+        row-gap: 11px;
+    }
+
+    &__mark {
+        display: flex;
+        flex-direction: row;
+        column-gap:6px ;
+    }
+
+    &__name {
+        font-family: 'Open Sans';
+        font-weight: 700;
+        font-size: 22px;
+        color: $black;
+        line-height: 168%;   
+    }
+
+    &__dol {
+        font-family: 'Open Sans';
+        font-weight: 600;
+        font-size: 13px;
+        color: $grey;
+        line-height: 168%;   
+    }
+}
